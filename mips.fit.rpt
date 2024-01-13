@@ -1,5 +1,5 @@
 Fitter report for mips
-Wed Jan 10 15:54:59 2024
+Fri Jan 12 19:48:54 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jan 10 15:54:59 2024          ;
+; Fitter Status                      ; Successful - Fri Jan 12 19:48:54 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; mips                                           ;
 ; Top-level Entity Name              ; mips                                           ;
@@ -147,12 +147,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.05        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-14        ;   0.4%      ;
+;     Processors 2-14        ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -1750,7 +1750,7 @@ Info (332111): Found 3 clocks
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1771,100 +1771,100 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169177): 52 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 9
-    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 10
-    Info (169178): Pin MAX10_CLK2_50 uses I/O standard 3.3-V LVTTL at N14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
-    Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
-    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Info (169178): Pin GSENSOR_INT[1] uses I/O standard 3.3-V LVTTL at Y14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
-    Info (169178): Pin GSENSOR_INT[2] uses I/O standard 3.3-V LVTTL at Y13 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
-    Info (169178): Pin DRAM_DQ[0] uses I/O standard 3.3-V LVTTL at Y21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[1] uses I/O standard 3.3-V LVTTL at Y20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[2] uses I/O standard 3.3-V LVTTL at AA22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[3] uses I/O standard 3.3-V LVTTL at AA21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[4] uses I/O standard 3.3-V LVTTL at Y22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[5] uses I/O standard 3.3-V LVTTL at W22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[6] uses I/O standard 3.3-V LVTTL at W20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[7] uses I/O standard 3.3-V LVTTL at V21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[8] uses I/O standard 3.3-V LVTTL at P21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[9] uses I/O standard 3.3-V LVTTL at J22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[10] uses I/O standard 3.3-V LVTTL at H21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[11] uses I/O standard 3.3-V LVTTL at H22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[12] uses I/O standard 3.3-V LVTTL at G22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[13] uses I/O standard 3.3-V LVTTL at G20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[14] uses I/O standard 3.3-V LVTTL at G19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin DRAM_DQ[15] uses I/O standard 3.3-V LVTTL at F22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169178): Pin GSENSOR_SDI uses I/O standard 3.3-V LVTTL at V11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 54
-    Info (169178): Pin GSENSOR_SDO uses I/O standard 3.3-V LVTTL at V12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
-    Info (169178): Pin ARDUINO_IO[0] uses I/O standard 3.3-V LVTTL at AB5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[1] uses I/O standard 3.3-V LVTTL at AB6 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[2] uses I/O standard 3.3-V LVTTL at AB7 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[3] uses I/O standard 3.3-V LVTTL at AB8 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[4] uses I/O standard 3.3-V LVTTL at AB9 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[5] uses I/O standard 3.3-V LVTTL at Y10 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[6] uses I/O standard 3.3-V LVTTL at AA11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[7] uses I/O standard 3.3-V LVTTL at AA12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[8] uses I/O standard 3.3-V LVTTL at AB17 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[9] uses I/O standard 3.3-V LVTTL at AA17 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[10] uses I/O standard 3.3-V LVTTL at AB19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[11] uses I/O standard 3.3-V LVTTL at AA19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[12] uses I/O standard 3.3-V LVTTL at Y19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[13] uses I/O standard 3.3-V LVTTL at AB20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[14] uses I/O standard 3.3-V LVTTL at AB21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_IO[15] uses I/O standard 3.3-V LVTTL at AA20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169178): Pin ARDUINO_RESET_N uses I/O standard 3.3 V Schmitt Trigger at F16 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 60
+    Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 6
+    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 7
+    Info (169178): Pin MAX10_CLK2_50 uses I/O standard 3.3-V LVTTL at N14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 8
+    Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
+    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Info (169178): Pin GSENSOR_INT[1] uses I/O standard 3.3-V LVTTL at Y14 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 49
+    Info (169178): Pin GSENSOR_INT[2] uses I/O standard 3.3-V LVTTL at Y13 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 49
+    Info (169178): Pin DRAM_DQ[0] uses I/O standard 3.3-V LVTTL at Y21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[1] uses I/O standard 3.3-V LVTTL at Y20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[2] uses I/O standard 3.3-V LVTTL at AA22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[3] uses I/O standard 3.3-V LVTTL at AA21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[4] uses I/O standard 3.3-V LVTTL at Y22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[5] uses I/O standard 3.3-V LVTTL at W22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[6] uses I/O standard 3.3-V LVTTL at W20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[7] uses I/O standard 3.3-V LVTTL at V21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[8] uses I/O standard 3.3-V LVTTL at P21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[9] uses I/O standard 3.3-V LVTTL at J22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[10] uses I/O standard 3.3-V LVTTL at H21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[11] uses I/O standard 3.3-V LVTTL at H22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[12] uses I/O standard 3.3-V LVTTL at G22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[13] uses I/O standard 3.3-V LVTTL at G20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[14] uses I/O standard 3.3-V LVTTL at G19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin DRAM_DQ[15] uses I/O standard 3.3-V LVTTL at F22 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169178): Pin GSENSOR_SDI uses I/O standard 3.3-V LVTTL at V11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 51
+    Info (169178): Pin GSENSOR_SDO uses I/O standard 3.3-V LVTTL at V12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
+    Info (169178): Pin ARDUINO_IO[0] uses I/O standard 3.3-V LVTTL at AB5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[1] uses I/O standard 3.3-V LVTTL at AB6 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[2] uses I/O standard 3.3-V LVTTL at AB7 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[3] uses I/O standard 3.3-V LVTTL at AB8 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[4] uses I/O standard 3.3-V LVTTL at AB9 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[5] uses I/O standard 3.3-V LVTTL at Y10 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[6] uses I/O standard 3.3-V LVTTL at AA11 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[7] uses I/O standard 3.3-V LVTTL at AA12 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[8] uses I/O standard 3.3-V LVTTL at AB17 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[9] uses I/O standard 3.3-V LVTTL at AA17 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[10] uses I/O standard 3.3-V LVTTL at AB19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[11] uses I/O standard 3.3-V LVTTL at AA19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[12] uses I/O standard 3.3-V LVTTL at Y19 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[13] uses I/O standard 3.3-V LVTTL at AB20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[14] uses I/O standard 3.3-V LVTTL at AB21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_IO[15] uses I/O standard 3.3-V LVTTL at AA20 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169178): Pin ARDUINO_RESET_N uses I/O standard 3.3 V Schmitt Trigger at F16 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 57
 Warning (169064): Following 35 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[2] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[3] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[4] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[5] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[6] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[7] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[8] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[9] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[10] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[11] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[12] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[13] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[14] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin DRAM_DQ[15] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Info (169065): Pin GSENSOR_SDI has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 54
-    Info (169065): Pin GSENSOR_SDO has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
-    Info (169065): Pin ARDUINO_IO[0] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[1] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[2] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[3] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[4] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[5] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[6] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[7] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[8] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[9] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[10] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[11] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[12] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[13] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[14] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_IO[15] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Info (169065): Pin ARDUINO_RESET_N has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 60
+    Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[2] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[3] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[4] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[5] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[6] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[7] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[8] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[9] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[10] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[11] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[12] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[13] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[14] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin DRAM_DQ[15] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Info (169065): Pin GSENSOR_SDI has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 51
+    Info (169065): Pin GSENSOR_SDO has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
+    Info (169065): Pin ARDUINO_IO[0] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[1] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[2] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[3] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[4] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[5] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[6] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[7] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[8] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[9] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[10] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[11] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[12] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[13] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[14] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_IO[15] has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Info (169065): Pin ARDUINO_RESET_N has a permanently disabled output enable File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 57
 Info (144001): Generated suppressed messages file C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6421 megabytes
-    Info: Processing ended: Wed Jan 10 15:54:59 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 6384 megabytes
+    Info: Processing ended: Fri Jan 12 19:48:54 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+

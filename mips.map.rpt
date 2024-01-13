@@ -1,5 +1,5 @@
-Analysis & Synthesis report for mips
-Wed Jan 10 15:54:54 2024
+Analysis & Elaboration report for mips
+Fri Jan 12 19:57:23 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -7,16 +7,10 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -41,29 +35,45 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                        ;
+; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 10 15:54:54 2024          ;
+; Analysis & Elaboration Status      ; Successful - Fri Jan 12 19:57:23 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; mips                                           ;
 ; Top-level Entity Name              ; mips                                           ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 0                                              ;
-;     Total combinational functions  ; 0                                              ;
-;     Dedicated logic registers      ; 0                                              ;
-; Total registers                    ; 0                                              ;
-; Total pins                         ; 149                                            ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0                                              ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
-; UFM blocks                         ; 0                                              ;
-; ADC blocks                         ; 0                                              ;
+; Total logic elements               ; N/A until Partition Merge                      ;
+;     Total combinational functions  ; N/A until Partition Merge                      ;
+;     Dedicated logic registers      ; N/A until Partition Merge                      ;
+; Total registers                    ; N/A until Partition Merge                      ;
+; Total pins                         ; N/A until Partition Merge                      ;
+; Total virtual pins                 ; N/A until Partition Merge                      ;
+; Total memory bits                  ; N/A until Partition Merge                      ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
+; Total PLLs                         ; N/A until Partition Merge                      ;
+; UFM blocks                         ; N/A until Partition Merge                      ;
+; ADC blocks                         ; N/A until Partition Merge                      ;
 +------------------------------------+------------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -148,326 +158,162 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
-; mips.v                           ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-;                                             ;                   ;
-; Total combinational functions               ; 0                 ;
-; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 0                 ;
-;     -- 3 input functions                    ; 0                 ;
-;     -- <=2 input functions                  ; 0                 ;
-;                                             ;                   ;
-; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 0                 ;
-;     -- arithmetic mode                      ; 0                 ;
-;                                             ;                   ;
-; Total registers                             ; 0                 ;
-;     -- Dedicated logic registers            ; 0                 ;
-;     -- I/O registers                        ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 149               ;
-;                                             ;                   ;
-; Embedded Multiplier 9-bit elements          ; 0                 ;
-;                                             ;                   ;
-; Maximum fan-out node                        ; DRAM_DQ[0]~output ;
-; Maximum fan-out                             ; 1                 ;
-; Total fan-out                               ; 184               ;
-; Average fan-out                             ; 0.55              ;
-+---------------------------------------------+-------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |mips                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 149  ; 0            ; 0          ; |mips               ; mips        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 149                         ;
-; cycloneiii_io_obuf    ; 35                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jan 10 15:54:48 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips
+    Info: Processing started: Fri Jan 12 19:57:08 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Warning (12125): Using design file mips.v, which is not specified as a design file for the current project, but contains definitions for 13 design units and 13 entities in project
-    Info (12023): Found entity 1: mips File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 6
-    Info (12023): Found entity 2: mipsv1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 74
-    Info (12023): Found entity 3: controller File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 95
-    Info (12023): Found entity 4: maindec File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 111
-    Info (12023): Found entity 5: aludec File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 134
-    Info (12023): Found entity 6: datapath File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 153
-    Info (12023): Found entity 7: regfile File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 195
-    Info (12023): Found entity 8: adder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 212
-    Info (12023): Found entity 9: sl2 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 217
-    Info (12023): Found entity 10: signext File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 223
-    Info (12023): Found entity 11: flopr File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 228
-    Info (12023): Found entity 12: mux2 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 237
-    Info (12023): Found entity 13: alu File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 245
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(83): created implicit net for "zero" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 83
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(84): created implicit net for "pcsrc" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 84
+Warning (12125): Using design file mips.v, which is not specified as a design file for the current project, but contains definitions for 38 design units and 38 entities in project
+    Info (12023): Found entity 1: mips File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 3
+    Info (12023): Found entity 2: InstructionMem File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 73
+    Info (12023): Found entity 3: instrmemstimulous File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 126
+    Info (12023): Found entity 4: Add File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 151
+    Info (12023): Found entity 5: adder1bit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 193
+    Info (12023): Found entity 6: regfile File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 206
+    Info (12023): Found entity 7: D_FF File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 274
+    Info (12023): Found entity 8: RegBit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 286
+    Info (12023): Found entity 9: register File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 300
+    Info (12023): Found entity 10: decoder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 340
+    Info (12023): Found entity 11: andmore File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 379
+    Info (12023): Found entity 12: dec5to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 385
+    Info (12023): Found entity 13: mux32to1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 429
+    Info (12023): Found entity 14: mux32x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 483
+    Info (12023): Found entity 15: alu File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 534
+    Info (12023): Found entity 16: alu1bit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 595
+    Info (12023): Found entity 17: addsub File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 606
+    Info (12023): Found entity 18: adder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 616
+    Info (12023): Found entity 19: mux21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 629
+    Info (12023): Found entity 20: dataMem File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 640
+    Info (12023): Found entity 21: zero_extend File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 702
+    Info (12023): Found entity 22: mux2x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 708
+    Info (12023): Found entity 23: sign_extend File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 750
+    Info (12023): Found entity 24: shift_left_2 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 756
+    Info (12023): Found entity 25: mux2x5to5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 763
+    Info (12023): Found entity 26: mux2_1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 775
+    Info (12023): Found entity 27: Control File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 787
+    Info (12023): Found entity 28: ALUControl_Block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 901
+    Info (12023): Found entity 29: JRControl_Block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 921
+    Info (12023): Found entity 30: ForwardingUnit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 937
+    Info (12023): Found entity 31: mux3x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 974
+    Info (12023): Found entity 32: StallControl File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 990
+    Info (12023): Found entity 33: flush_block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1063
+    Info (12023): Found entity 34: Discard_Instr File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1089
+    Info (12023): Found entity 35: WB_forward File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1098
+    Info (12023): Found entity 36: CompareAddress File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1134
+    Info (12023): Found entity 37: MIPSpipeline File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1151
+    Info (12023): Found entity 38: MIPSStimulus File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1362
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(199): created implicit net for "c1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 199
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(200): created implicit net for "c2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 200
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(201): created implicit net for "c3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 201
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(382): created implicit net for "f1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 382
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(388): created implicit net for "Nota" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 388
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(389): created implicit net for "Notb" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 389
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(390): created implicit net for "Notc" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 390
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(391): created implicit net for "Notd" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 391
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(392): created implicit net for "Note" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 392
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(471): created implicit net for "g3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 471
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(472): created implicit net for "g4" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 472
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(473): created implicit net for "g5" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 473
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(474): created implicit net for "g6" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 474
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(475): created implicit net for "g7" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 475
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(476): created implicit net for "g8" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 476
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(477): created implicit net for "g9" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 477
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(478): created implicit net for "g10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 478
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(479): created implicit net for "g11" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 479
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(480): created implicit net for "g12" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 480
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(574): created implicit net for "notcr31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 574
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(579): created implicit net for "addsub31Out" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 579
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(579): created implicit net for "crrout31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 579
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(582): created implicit net for "o1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 582
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(583): created implicit net for "o2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 583
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(584): created implicit net for "o3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 584
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(585): created implicit net for "o4" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 585
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(586): created implicit net for "o5" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 586
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(587): created implicit net for "o6" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 587
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(588): created implicit net for "o7" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 588
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(589): created implicit net for "o8" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 589
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(590): created implicit net for "o9" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 590
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(591): created implicit net for "o10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 591
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(599): created implicit net for "addsubOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 599
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(600): created implicit net for "xorOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 600
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(601): created implicit net for "xorlessOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 601
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(609): created implicit net for "notb" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 609
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(610): created implicit net for "b1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 610
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(622): created implicit net for "c1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 622
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(623): created implicit net for "c2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 623
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(624): created implicit net for "c3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 624
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(634): created implicit net for "nsel" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 634
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(635): created implicit net for "O1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 635
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(636): created implicit net for "O2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 636
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(780): created implicit net for "nsel" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 780
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(781): created implicit net for "O1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 781
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(782): created implicit net for "O2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 782
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(944): created implicit net for "a" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 944
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(945): created implicit net for "b" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 945
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(946): created implicit net for "x" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 946
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(950): created implicit net for "c" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 950
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(951): created implicit net for "d" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 951
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(952): created implicit net for "y" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 952
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(957): created implicit net for "notx" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 957
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(961): created implicit net for "b1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 961
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(962): created implicit net for "d1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 962
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(963): created implicit net for "x1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 963
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(964): created implicit net for "y1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 964
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(967): created implicit net for "notx1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 967
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1022): created implicit net for "OrRsRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1022
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1023): created implicit net for "notOrRsRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1023
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1031): created implicit net for "OrRtRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1031
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1032): created implicit net for "notOrRtRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1032
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1040): created implicit net for "ec1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1040
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1048): created implicit net for "ec2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1048
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1051): created implicit net for "xorop" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1051
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1052): created implicit net for "xoroprt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1052
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1053): created implicit net for "OrOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1053
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1054): created implicit net for "Condition" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1054
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1073): created implicit net for "notflush" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1073
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1122): created implicit net for "orOut1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1122
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1147): created implicit net for "OrAddr" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1147
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1251): created implicit net for "ID_flush" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1251
+Warning (10227): Verilog HDL Port Declaration warning at mips.v(995): data type declaration for "EX_rt" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 995
+Info (10499): HDL info at mips.v(993): see declaration for object "EX_rt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 993
+Warning (10227): Verilog HDL Port Declaration warning at mips.v(995): data type declaration for "ID_rs" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 995
+Info (10499): HDL info at mips.v(993): see declaration for object "ID_rs" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 993
+Warning (10227): Verilog HDL Port Declaration warning at mips.v(995): data type declaration for "ID_rt" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 995
+Info (10499): HDL info at mips.v(993): see declaration for object "ID_rt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 993
 Info (12127): Elaborating entity "mips" for the top level hierarchy
-Warning (10034): Output port "DRAM_ADDR" at mips.v(14) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-Warning (10034): Output port "DRAM_BA" at mips.v(15) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 15
-Warning (10034): Output port "HEX0" at mips.v(27) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-Warning (10034): Output port "HEX1" at mips.v(28) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-Warning (10034): Output port "HEX2" at mips.v(29) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-Warning (10034): Output port "HEX3" at mips.v(30) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-Warning (10034): Output port "HEX4" at mips.v(31) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-Warning (10034): Output port "HEX5" at mips.v(32) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-Warning (10034): Output port "LEDR" at mips.v(38) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-Warning (10034): Output port "VGA_B" at mips.v(44) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
-Warning (10034): Output port "VGA_G" at mips.v(45) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
-Warning (10034): Output port "VGA_R" at mips.v(47) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 47
-Warning (10034): Output port "DRAM_CAS_N" at mips.v(16) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 16
-Warning (10034): Output port "DRAM_CKE" at mips.v(17) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
-Warning (10034): Output port "DRAM_CLK" at mips.v(18) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 18
-Warning (10034): Output port "DRAM_CS_N" at mips.v(19) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 19
-Warning (10034): Output port "DRAM_LDQM" at mips.v(21) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 21
-Warning (10034): Output port "DRAM_RAS_N" at mips.v(22) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 22
-Warning (10034): Output port "DRAM_UDQM" at mips.v(23) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 23
-Warning (10034): Output port "DRAM_WE_N" at mips.v(24) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
-Warning (10034): Output port "VGA_HS" at mips.v(46) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 46
-Warning (10034): Output port "VGA_VS" at mips.v(48) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 48
-Warning (10034): Output port "GSENSOR_CS_N" at mips.v(51) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 51
-Warning (10034): Output port "GSENSOR_SCLK" at mips.v(53) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 53
-Warning (12158): Entity "mips" contains only dangling pins
-Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
-    Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 54
-    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
-    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 58
-    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 60
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
-    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 15
-    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 15
-    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 16
-    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
-    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 18
-    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 19
-    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 21
-    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 22
-    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 23
-    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX0[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX1[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX2[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX3[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 30
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX4[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 31
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "HEX5[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
-    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
-    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
-    Warning (13410): Pin "VGA_B[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
-    Warning (13410): Pin "VGA_B[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
-    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
-    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
-    Warning (13410): Pin "VGA_HS" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 46
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 47
-    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 47
-    Warning (13410): Pin "VGA_R[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 47
-    Warning (13410): Pin "VGA_R[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 47
-    Warning (13410): Pin "VGA_VS" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 48
-    Warning (13410): Pin "GSENSOR_CS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 51
-    Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 53
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 17 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADC_CLK_10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 9
-    Warning (15610): No output dependent on input pin "MAX10_CLK1_50" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 10
-    Warning (15610): No output dependent on input pin "MAX10_CLK2_50" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
-    Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
-    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
-Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 97 output pins
-    Info (21060): Implemented 35 bidirectional pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 181 warnings
-    Info: Peak virtual memory: 4740 megabytes
-    Info: Processing ended: Wed Jan 10 15:54:54 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+Warning (10034): Output port "DRAM_ADDR" at mips.v(11) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+Warning (10034): Output port "DRAM_BA" at mips.v(12) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 12
+Warning (10034): Output port "HEX0" at mips.v(24) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+Warning (10034): Output port "HEX1" at mips.v(25) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+Warning (10034): Output port "HEX2" at mips.v(26) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+Warning (10034): Output port "HEX3" at mips.v(27) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+Warning (10034): Output port "HEX4" at mips.v(28) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+Warning (10034): Output port "HEX5" at mips.v(29) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+Warning (10034): Output port "LEDR" at mips.v(35) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+Warning (10034): Output port "VGA_B" at mips.v(41) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
+Warning (10034): Output port "VGA_G" at mips.v(42) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 42
+Warning (10034): Output port "VGA_R" at mips.v(44) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
+Warning (10034): Output port "DRAM_CAS_N" at mips.v(13) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 13
+Warning (10034): Output port "DRAM_CKE" at mips.v(14) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
+Warning (10034): Output port "DRAM_CLK" at mips.v(15) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 15
+Warning (10034): Output port "DRAM_CS_N" at mips.v(16) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 16
+Warning (10034): Output port "DRAM_LDQM" at mips.v(18) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 18
+Warning (10034): Output port "DRAM_RAS_N" at mips.v(19) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 19
+Warning (10034): Output port "DRAM_UDQM" at mips.v(20) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
+Warning (10034): Output port "DRAM_WE_N" at mips.v(21) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 21
+Warning (10034): Output port "VGA_HS" at mips.v(43) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 43
+Warning (10034): Output port "VGA_VS" at mips.v(45) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
+Warning (10034): Output port "GSENSOR_CS_N" at mips.v(48) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 48
+Warning (10034): Output port "GSENSOR_SCLK" at mips.v(50) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 50
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 101 warnings
+    Info: Peak virtual memory: 4730 megabytes
+    Info: Processing ended: Fri Jan 12 19:57:23 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:02
 
 
