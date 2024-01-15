@@ -1083,9 +1083,6 @@ and #50 and9(ID_ALUOp[1],ALUOp[1],notflush);
 and #50 and10(ID_ALUOp[0],ALUOp[0],notflush);
 endmodule
 
-// fpga4student.com: FPGA projects, Verilog Projects, VHDL projects
-// Verilog project: 32-bit 5-stage Pipelined MIPS Processor in Verilog 
-// Discard instructions when needed
 module Discard_Instr(ID_flush,IF_flush,jump,bne,jr);
 output ID_flush,IF_flush;
 input jump,bne,jr;
@@ -1132,9 +1129,7 @@ endmodule
 
 
 module CompareAddress(equal,Addr1,Addr2);
-// fpga4student.com: FPGA projects, Verilog Projects, VHDL projects
-// Verilog project: 32-bit 5-stage Pipelined MIPS Processor in Verilog 
-// Compare Address
+
 output equal;
 wire equal;
 input [4:0] Addr1,Addr2;
@@ -1356,26 +1351,4 @@ mux2x32to32  muxJump( PC4bnej,PC4bne, PCj, JumpControl);
 assign PCjr = Bus_A_ALU;
 mux2x32to32  muxJR( PCin,PC4bnej, PCjr, EX_JRControl);
  
-endmodule
-
-
-module MIPSStimulus();
-// fpga4student.com: FPGA projects, Verilog Projects, VHDL projects
-// Verilog project: 32-bit 5-stage Pipelined MIPS Processor in Verilog 
-// Testbench Verilog code for 32-bit 5-stage Pipelined MIPS Processor 
-parameter ClockDelay = 5000;
-
-reg clk,reset;
-
-
-MIPSpipeline  myMIPS(clk, reset);
-initial clk = 0;
-always #(ClockDelay/2) clk = ~clk;
-
-initial 
-begin
-   reset = 1;
-  #(ClockDelay/4);
-  reset = 0;
-end
 endmodule
