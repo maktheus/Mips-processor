@@ -1,5 +1,5 @@
-Analysis & Elaboration report for mips
-Fri Jan 12 19:57:23 2024
+Analysis & Synthesis report for mips
+Mon Jan 15 15:24:35 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -7,10 +7,92 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "MIPSpipeline:myMIPS|shift_left_2:shiftleft2_jump"
+ 10. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_RegWrite"
+ 11. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_MemtoReg"
+ 12. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister0"
+ 13. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister1"
+ 14. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister2"
+ 15. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister3"
+ 16. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister4"
+ 17. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:MEMWB_ALUResult"
+ 18. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:MEMWB_ReadDataOfMem"
+ 19. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister0"
+ 20. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister1"
+ 21. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister2"
+ 22. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister3"
+ 23. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister4"
+ 24. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_MemWrite"
+ 25. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_MemRead"
+ 26. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_RegWrite"
+ 27. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_MemtoReg"
+ 28. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:EXMEM_WriteDataOfMem"
+ 29. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:EXMEM_ALUResult"
+ 30. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|addsub:add2"
+ 31. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu31"
+ 32. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu30"
+ 33. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu29"
+ 34. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu28"
+ 35. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu27"
+ 36. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu26"
+ 37. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu25"
+ 38. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu24"
+ 39. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu23"
+ 40. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu22"
+ 41. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu21"
+ 42. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu20"
+ 43. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu19"
+ 44. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu18"
+ 45. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu17"
+ 46. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu16"
+ 47. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu15"
+ 48. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu14"
+ 49. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu13"
+ 50. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu12"
+ 51. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu11"
+ 52. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu10"
+ 53. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu9"
+ 54. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu8"
+ 55. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu7"
+ 56. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu6"
+ 57. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu5"
+ 58. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu4"
+ 59. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu3"
+ 60. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu2"
+ 61. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu1"
+ 62. Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block"
+ 63. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_ALUOp0"
+ 64. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_ALUOp1"
+ 65. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_JRControl"
+ 66. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_Branch"
+ 67. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_MemWrite"
+ 68. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_MemRead"
+ 69. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_RegWrite"
+ 70. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_MemtoReg"
+ 71. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_ALUSrc"
+ 72. Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_RegDst"
+ 73. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_rs_rt_rd"
+ 74. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_Im16_Ext"
+ 75. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_ReadData2"
+ 76. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_ReadData1"
+ 77. Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_PC4"
+ 78. Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|mux32x32to32:Mux1|mux32to1:mux0|dec5to32:dec1"
+ 79. Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|register:reg0"
+ 80. Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1|dec5to32:dec"
+ 81. Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1"
+ 82. Port Connectivity Checks: "MIPSpipeline:myMIPS|Add:Add1|adder1bit:adder1bit31"
+ 83. Port Connectivity Checks: "MIPSpipeline:myMIPS|Add:Add1|adder1bit:adder1bit0"
+ 84. Port Connectivity Checks: "MIPSpipeline:myMIPS|Add:Add1"
+ 85. Post-Synthesis Netlist Statistics for Top Partition
+ 86. Elapsed Time Per Partition
+ 87. Analysis & Synthesis Messages
 
 
 
@@ -35,51 +117,39 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                      ;
+; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Jan 12 19:57:23 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 15 15:24:35 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; mips                                           ;
 ; Top-level Entity Name              ; mips                                           ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 0                                              ;
+;     Total combinational functions  ; 0                                              ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 149                                            ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                            ; mips               ; mips               ;
-; Family name                                                      ; MAX 10 FPGA        ; Cyclone V          ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Type of Retiming Performed During Resynthesis                    ; Full               ;                    ;
+; Resynthesis Optimization Effort                                  ; Normal             ;                    ;
+; Physical Synthesis Level for Resynthesis                         ; Normal             ;                    ;
+; Use Generated Physical Constraints File                          ; On                 ;                    ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                      ; Off                ; Off                ;
@@ -158,133 +228,933 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; mips.v                           ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v    ;         ;
+; instr.txt                        ; yes             ; Auto-Found File              ; C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/instr.txt ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+;                                             ;                   ;
+; Total combinational functions               ; 0                 ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 0                 ;
+;     -- 3 input functions                    ; 0                 ;
+;     -- <=2 input functions                  ; 0                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 0                 ;
+;     -- arithmetic mode                      ; 0                 ;
+;                                             ;                   ;
+; Total registers                             ; 0                 ;
+;     -- Dedicated logic registers            ; 0                 ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 149               ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; DRAM_DQ[0]~output ;
+; Maximum fan-out                             ; 1                 ;
+; Total fan-out                               ; 184               ;
+; Average fan-out                             ; 0.55              ;
++---------------------------------------------+-------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |mips                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 149  ; 0            ; 0          ; |mips               ; mips        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|shift_left_2:shiftleft2_jump"                                            ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Out32[31..28] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; In32[31..26]  ; Input  ; Info     ; Stuck at GND                                                                        ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_RegWrite" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                             ;
++---------+-------+----------+------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_MemtoReg" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                             ;
++---------+-------+----------+------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister0" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister1" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister2" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister3" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:MEMWB_WriteRegister4" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:MEMWB_ALUResult" ;
++---------+-------+----------+---------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                     ;
++---------+-------+----------+---------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                ;
++---------+-------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:MEMWB_ReadDataOfMem" ;
++---------+-------+----------+-------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                         ;
++---------+-------+----------+-------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                    ;
++---------+-------+----------+-------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister0" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister1" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister2" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister3" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_WriteRegister4" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_MemWrite" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                             ;
++---------+-------+----------+------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_MemRead" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                            ;
++---------+-------+----------+-----------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_RegWrite" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                             ;
++---------+-------+----------+------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:EXMEM_MemtoReg" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                             ;
++---------+-------+----------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:EXMEM_WriteDataOfMem" ;
++---------+-------+----------+--------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                          ;
++---------+-------+----------+--------------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                     ;
++---------+-------+----------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:EXMEM_ALUResult" ;
++---------+-------+----------+---------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                     ;
++---------+-------+----------+---------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                                ;
++---------+-------+----------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|addsub:add2"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu31" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu30" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu29" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu28" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu27" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu26" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu25" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu24" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu23" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu22" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu21" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu20" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu19" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu18" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu17" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu16" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu15" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu14" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu13" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu12" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu11" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu10" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu9" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu8" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu7" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu6" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu5" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu4" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu3" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu2" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu1" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; less ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|alu:alu_block"                                                      ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; CarryOut ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; negative ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_ALUOp0" ;
++---------+-------+----------+---------------------------------------+
+; Port    ; Type  ; Severity ; Details                               ;
++---------+-------+----------+---------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                          ;
++---------+-------+----------+---------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_ALUOp1" ;
++---------+-------+----------+---------------------------------------+
+; Port    ; Type  ; Severity ; Details                               ;
++---------+-------+----------+---------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                          ;
++---------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_JRControl" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                             ;
++---------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_Branch" ;
++---------+-------+----------+---------------------------------------+
+; Port    ; Type  ; Severity ; Details                               ;
++---------+-------+----------+---------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                          ;
++---------+-------+----------+---------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_MemWrite" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                            ;
++---------+-------+----------+-----------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_MemRead" ;
++---------+-------+----------+----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                ;
++---------+-------+----------+----------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                           ;
++---------+-------+----------+----------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_RegWrite" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                            ;
++---------+-------+----------+-----------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_MemtoReg" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                            ;
++---------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_ALUSrc" ;
++---------+-------+----------+---------------------------------------+
+; Port    ; Type  ; Severity ; Details                               ;
++---------+-------+----------+---------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                          ;
++---------+-------+----------+---------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|RegBit:IDEX_RegDst" ;
++---------+-------+----------+---------------------------------------+
+; Port    ; Type  ; Severity ; Details                               ;
++---------+-------+----------+---------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                          ;
++---------+-------+----------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_rs_rt_rd"                                                   ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; RegOut[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; RegOut[10..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; WriteEn        ; Input  ; Info     ; Stuck at VCC                                                                        ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_Im16_Ext" ;
++---------+-------+----------+-------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                   ;
++---------+-------+----------+-------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                              ;
++---------+-------+----------+-------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_ReadData2" ;
++---------+-------+----------+--------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                    ;
++---------+-------+----------+--------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                               ;
++---------+-------+----------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_ReadData1" ;
++---------+-------+----------+--------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                    ;
++---------+-------+----------+--------------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                               ;
++---------+-------+----------+--------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|register:IDEX_PC4" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; WriteEn ; Input ; Info     ; Stuck at VCC                         ;
++---------+-------+----------+--------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|mux32x32to32:Mux1|mux32to1:mux0|dec5to32:dec1"   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Out[31..28] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|register:reg0" ;
++---------+-------+----------+--------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                ;
++---------+-------+----------+--------------------------------------------------------+
+; RegIn   ; Input ; Info     ; Stuck at GND                                           ;
+; WriteEn ; Input ; Info     ; Stuck at VCC                                           ;
+; reset   ; Input ; Info     ; Stuck at GND                                           ;
++---------+-------+----------+--------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1|dec5to32:dec"              ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Out[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1"                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; WriteEn[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|Add:Add1|adder1bit:adder1bit31"                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|Add:Add1|adder1bit:adder1bit0" ;
++------+-------+----------+-----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                             ;
++------+-------+----------+-----------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                        ;
++------+-------+----------+-----------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "MIPSpipeline:myMIPS|Add:Add1" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND               ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND               ;
+; B[2]     ; Input ; Info     ; Stuck at VCC               ;
++----------+-------+----------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 149                         ;
+; cycloneiii_io_obuf    ; 35                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Fri Jan 12 19:57:08 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips --analysis_and_elaboration
+    Info: Processing started: Mon Jan 15 15:24:25 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Warning (12125): Using design file mips.v, which is not specified as a design file for the current project, but contains definitions for 38 design units and 38 entities in project
+Warning (12125): Using design file mips.v, which is not specified as a design file for the current project, but contains definitions for 37 design units and 37 entities in project
     Info (12023): Found entity 1: mips File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 3
-    Info (12023): Found entity 2: InstructionMem File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 73
-    Info (12023): Found entity 3: instrmemstimulous File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 126
-    Info (12023): Found entity 4: Add File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 151
-    Info (12023): Found entity 5: adder1bit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 193
-    Info (12023): Found entity 6: regfile File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 206
-    Info (12023): Found entity 7: D_FF File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 274
-    Info (12023): Found entity 8: RegBit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 286
-    Info (12023): Found entity 9: register File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 300
-    Info (12023): Found entity 10: decoder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 340
-    Info (12023): Found entity 11: andmore File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 379
-    Info (12023): Found entity 12: dec5to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 385
-    Info (12023): Found entity 13: mux32to1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 429
-    Info (12023): Found entity 14: mux32x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 483
-    Info (12023): Found entity 15: alu File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 534
-    Info (12023): Found entity 16: alu1bit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 595
-    Info (12023): Found entity 17: addsub File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 606
-    Info (12023): Found entity 18: adder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 616
-    Info (12023): Found entity 19: mux21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 629
-    Info (12023): Found entity 20: dataMem File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 640
-    Info (12023): Found entity 21: zero_extend File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 702
-    Info (12023): Found entity 22: mux2x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 708
-    Info (12023): Found entity 23: sign_extend File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 750
-    Info (12023): Found entity 24: shift_left_2 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 756
-    Info (12023): Found entity 25: mux2x5to5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 763
-    Info (12023): Found entity 26: mux2_1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 775
-    Info (12023): Found entity 27: Control File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 787
-    Info (12023): Found entity 28: ALUControl_Block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 901
-    Info (12023): Found entity 29: JRControl_Block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 921
-    Info (12023): Found entity 30: ForwardingUnit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 937
-    Info (12023): Found entity 31: mux3x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 974
-    Info (12023): Found entity 32: StallControl File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 990
-    Info (12023): Found entity 33: flush_block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1063
-    Info (12023): Found entity 34: Discard_Instr File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1089
-    Info (12023): Found entity 35: WB_forward File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1098
-    Info (12023): Found entity 36: CompareAddress File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1134
-    Info (12023): Found entity 37: MIPSpipeline File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1151
-    Info (12023): Found entity 38: MIPSStimulus File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1362
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(199): created implicit net for "c1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 199
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(200): created implicit net for "c2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 200
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(201): created implicit net for "c3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 201
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(382): created implicit net for "f1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 382
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(388): created implicit net for "Nota" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 388
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(389): created implicit net for "Notb" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 389
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(390): created implicit net for "Notc" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 390
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(391): created implicit net for "Notd" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 391
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(392): created implicit net for "Note" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 392
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(471): created implicit net for "g3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 471
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(472): created implicit net for "g4" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 472
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(473): created implicit net for "g5" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 473
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(474): created implicit net for "g6" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 474
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(475): created implicit net for "g7" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 475
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(476): created implicit net for "g8" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 476
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(477): created implicit net for "g9" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 477
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(478): created implicit net for "g10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 478
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(479): created implicit net for "g11" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 479
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(480): created implicit net for "g12" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 480
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(574): created implicit net for "notcr31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 574
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(579): created implicit net for "addsub31Out" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 579
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(579): created implicit net for "crrout31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 579
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(582): created implicit net for "o1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 582
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(583): created implicit net for "o2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 583
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(584): created implicit net for "o3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 584
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(585): created implicit net for "o4" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 585
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(586): created implicit net for "o5" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 586
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(587): created implicit net for "o6" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 587
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(588): created implicit net for "o7" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 588
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(589): created implicit net for "o8" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 589
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(590): created implicit net for "o9" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 590
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(591): created implicit net for "o10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 591
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(599): created implicit net for "addsubOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 599
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(600): created implicit net for "xorOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 600
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(601): created implicit net for "xorlessOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 601
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(609): created implicit net for "notb" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 609
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(610): created implicit net for "b1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 610
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(622): created implicit net for "c1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 622
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(623): created implicit net for "c2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 623
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(624): created implicit net for "c3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 624
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(634): created implicit net for "nsel" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 634
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(635): created implicit net for "O1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 635
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(636): created implicit net for "O2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 636
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(780): created implicit net for "nsel" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 780
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(781): created implicit net for "O1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 781
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(782): created implicit net for "O2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 782
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(944): created implicit net for "a" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 944
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(945): created implicit net for "b" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 945
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(946): created implicit net for "x" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 946
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(950): created implicit net for "c" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 950
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(951): created implicit net for "d" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 951
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(952): created implicit net for "y" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 952
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(957): created implicit net for "notx" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 957
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(961): created implicit net for "b1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 961
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(962): created implicit net for "d1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 962
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(963): created implicit net for "x1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 963
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(964): created implicit net for "y1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 964
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(967): created implicit net for "notx1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 967
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1022): created implicit net for "OrRsRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1022
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1023): created implicit net for "notOrRsRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1023
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1031): created implicit net for "OrRtRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1031
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1032): created implicit net for "notOrRtRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1032
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1040): created implicit net for "ec1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1040
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1048): created implicit net for "ec2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1048
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1051): created implicit net for "xorop" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1051
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1052): created implicit net for "xoroprt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1052
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1053): created implicit net for "OrOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1053
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1054): created implicit net for "Condition" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1054
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1073): created implicit net for "notflush" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1073
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1122): created implicit net for "orOut1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1122
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1147): created implicit net for "OrAddr" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1147
-Warning (10236): Verilog HDL Implicit Net warning at mips.v(1251): created implicit net for "ID_flush" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1251
-Warning (10227): Verilog HDL Port Declaration warning at mips.v(995): data type declaration for "EX_rt" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 995
-Info (10499): HDL info at mips.v(993): see declaration for object "EX_rt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 993
-Warning (10227): Verilog HDL Port Declaration warning at mips.v(995): data type declaration for "ID_rs" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 995
-Info (10499): HDL info at mips.v(993): see declaration for object "ID_rs" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 993
-Warning (10227): Verilog HDL Port Declaration warning at mips.v(995): data type declaration for "ID_rt" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 995
-Info (10499): HDL info at mips.v(993): see declaration for object "ID_rt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 993
+    Info (12023): Found entity 2: InstructionMem File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 74
+    Info (12023): Found entity 3: instrmemstimulous File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 127
+    Info (12023): Found entity 4: Add File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 152
+    Info (12023): Found entity 5: adder1bit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 194
+    Info (12023): Found entity 6: regfile File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 207
+    Info (12023): Found entity 7: D_FF File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 275
+    Info (12023): Found entity 8: RegBit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 287
+    Info (12023): Found entity 9: register File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 301
+    Info (12023): Found entity 10: decoder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 341
+    Info (12023): Found entity 11: andmore File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 380
+    Info (12023): Found entity 12: dec5to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 386
+    Info (12023): Found entity 13: mux32to1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 430
+    Info (12023): Found entity 14: mux32x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 484
+    Info (12023): Found entity 15: alu File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 535
+    Info (12023): Found entity 16: alu1bit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 596
+    Info (12023): Found entity 17: addsub File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 607
+    Info (12023): Found entity 18: adder File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 617
+    Info (12023): Found entity 19: mux21 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 630
+    Info (12023): Found entity 20: dataMem File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 641
+    Info (12023): Found entity 21: zero_extend File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 703
+    Info (12023): Found entity 22: mux2x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 709
+    Info (12023): Found entity 23: sign_extend File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 751
+    Info (12023): Found entity 24: shift_left_2 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 757
+    Info (12023): Found entity 25: mux2x5to5 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 764
+    Info (12023): Found entity 26: mux2_1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 776
+    Info (12023): Found entity 27: Control File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 788
+    Info (12023): Found entity 28: ALUControl_Block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 902
+    Info (12023): Found entity 29: JRControl_Block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 922
+    Info (12023): Found entity 30: ForwardingUnit File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 938
+    Info (12023): Found entity 31: mux3x32to32 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 975
+    Info (12023): Found entity 32: StallControl File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 991
+    Info (12023): Found entity 33: flush_block File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1064
+    Info (12023): Found entity 34: Discard_Instr File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1087
+    Info (12023): Found entity 35: WB_forward File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1096
+    Info (12023): Found entity 36: CompareAddress File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1132
+    Info (12023): Found entity 37: MIPSpipeline File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1147
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(65): created implicit net for "reset" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(200): created implicit net for "c1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 200
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(201): created implicit net for "c2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 201
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(202): created implicit net for "c3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 202
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(383): created implicit net for "f1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 383
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(389): created implicit net for "Nota" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 389
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(390): created implicit net for "Notb" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 390
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(391): created implicit net for "Notc" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 391
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(392): created implicit net for "Notd" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 392
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(393): created implicit net for "Note" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 393
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(472): created implicit net for "g3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 472
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(473): created implicit net for "g4" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 473
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(474): created implicit net for "g5" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 474
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(475): created implicit net for "g6" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 475
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(476): created implicit net for "g7" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 476
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(477): created implicit net for "g8" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 477
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(478): created implicit net for "g9" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 478
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(479): created implicit net for "g10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 479
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(480): created implicit net for "g11" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 480
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(481): created implicit net for "g12" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 481
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(575): created implicit net for "notcr31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 575
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(580): created implicit net for "addsub31Out" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 580
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(580): created implicit net for "crrout31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 580
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(583): created implicit net for "o1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 583
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(584): created implicit net for "o2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 584
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(585): created implicit net for "o3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 585
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(586): created implicit net for "o4" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 586
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(587): created implicit net for "o5" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 587
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(588): created implicit net for "o6" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 588
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(589): created implicit net for "o7" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 589
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(590): created implicit net for "o8" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 590
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(591): created implicit net for "o9" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 591
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(592): created implicit net for "o10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 592
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(600): created implicit net for "addsubOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 600
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(601): created implicit net for "xorOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 601
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(602): created implicit net for "xorlessOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 602
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(610): created implicit net for "notb" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 610
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(611): created implicit net for "b1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 611
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(623): created implicit net for "c1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 623
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(624): created implicit net for "c2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 624
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(625): created implicit net for "c3" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 625
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(635): created implicit net for "nsel" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 635
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(636): created implicit net for "O1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 636
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(637): created implicit net for "O2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 637
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(781): created implicit net for "nsel" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 781
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(782): created implicit net for "O1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 782
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(783): created implicit net for "O2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 783
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(945): created implicit net for "a" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 945
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(946): created implicit net for "b" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 946
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(947): created implicit net for "x" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 947
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(951): created implicit net for "c" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 951
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(952): created implicit net for "d" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 952
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(953): created implicit net for "y" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 953
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(958): created implicit net for "notx" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 958
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(962): created implicit net for "b1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 962
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(963): created implicit net for "d1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 963
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(964): created implicit net for "x1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 964
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(965): created implicit net for "y1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 965
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(968): created implicit net for "notx1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 968
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1023): created implicit net for "OrRsRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1023
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1024): created implicit net for "notOrRsRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1024
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1032): created implicit net for "OrRtRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1032
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1033): created implicit net for "notOrRtRt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1033
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1041): created implicit net for "ec1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1041
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1049): created implicit net for "ec2" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1049
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1052): created implicit net for "xorop" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1052
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1053): created implicit net for "xoroprt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1053
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1054): created implicit net for "OrOut" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1054
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1055): created implicit net for "Condition" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1055
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1074): created implicit net for "notflush" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1074
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1120): created implicit net for "orOut1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1120
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1143): created implicit net for "OrAddr" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1143
+Warning (10236): Verilog HDL Implicit Net warning at mips.v(1247): created implicit net for "ID_flush" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1247
+Warning (10227): Verilog HDL Port Declaration warning at mips.v(996): data type declaration for "EX_rt" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 996
+Info (10499): HDL info at mips.v(994): see declaration for object "EX_rt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 994
+Warning (10227): Verilog HDL Port Declaration warning at mips.v(996): data type declaration for "ID_rs" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 996
+Info (10499): HDL info at mips.v(994): see declaration for object "ID_rs" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 994
+Warning (10227): Verilog HDL Port Declaration warning at mips.v(996): data type declaration for "ID_rt" declares packed dimensions but the port declaration declaration does not File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 996
+Info (10499): HDL info at mips.v(994): see declaration for object "ID_rt" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 994
 Info (12127): Elaborating entity "mips" for the top level hierarchy
 Warning (10034): Output port "DRAM_ADDR" at mips.v(11) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
 Warning (10034): Output port "DRAM_BA" at mips.v(12) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 12
@@ -310,10 +1180,209 @@ Warning (10034): Output port "VGA_HS" at mips.v(43) has no driver File: C:/Users
 Warning (10034): Output port "VGA_VS" at mips.v(45) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
 Warning (10034): Output port "GSENSOR_CS_N" at mips.v(48) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 48
 Warning (10034): Output port "GSENSOR_SCLK" at mips.v(50) has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 50
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 101 warnings
-    Info: Peak virtual memory: 4730 megabytes
-    Info: Processing ended: Fri Jan 12 19:57:23 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:02
+Info (12128): Elaborating entity "MIPSpipeline" for hierarchy "MIPSpipeline:myMIPS" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 65
+Warning (10036): Verilog HDL or VHDL warning at mips.v(1160): object "rd" assigned a value but never read File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1160
+Info (12128): Elaborating entity "register" for hierarchy "MIPSpipeline:myMIPS|register:PC_Reg" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1190
+Info (12128): Elaborating entity "RegBit" for hierarchy "MIPSpipeline:myMIPS|register:PC_Reg|RegBit:bit31" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 305
+Info (12128): Elaborating entity "D_FF" for hierarchy "MIPSpipeline:myMIPS|register:PC_Reg|RegBit:bit31|D_FF:DFF0" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 297
+Info (12128): Elaborating entity "Add" for hierarchy "MIPSpipeline:myMIPS|Add:Add1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1191
+Info (12128): Elaborating entity "adder1bit" for hierarchy "MIPSpipeline:myMIPS|Add:Add1|adder1bit:adder1bit0" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 156
+Info (12128): Elaborating entity "InstructionMem" for hierarchy "MIPSpipeline:myMIPS|InstructionMem:InstructionMem1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1193
+Warning (10850): Verilog HDL warning at mips.v(121): number of words (15) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 121
+Warning (10030): Net "instrmem.data_a" at mips.v(78) has no driver or initial value, using a default initial value '0' File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 78
+Warning (10030): Net "instrmem.waddr_a" at mips.v(78) has no driver or initial value, using a default initial value '0' File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 78
+Warning (10030): Net "instrmem.we_a" at mips.v(78) has no driver or initial value, using a default initial value '0' File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 78
+Info (12128): Elaborating entity "Control" for hierarchy "MIPSpipeline:myMIPS|Control:MainControl" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1222
+Info (12128): Elaborating entity "regfile" for hierarchy "MIPSpipeline:myMIPS|regfile:Register_File" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1234
+Info (12128): Elaborating entity "decoder" for hierarchy "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 226
+Info (12128): Elaborating entity "dec5to32" for hierarchy "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1|dec5to32:dec" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 346
+Info (12128): Elaborating entity "andmore" for hierarchy "MIPSpipeline:myMIPS|regfile:Register_File|decoder:Decoder1|dec5to32:dec|andmore:a0" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 395
+Info (12128): Elaborating entity "mux32x32to32" for hierarchy "MIPSpipeline:myMIPS|regfile:Register_File|mux32x32to32:Mux1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 264
+Info (12128): Elaborating entity "mux32to1" for hierarchy "MIPSpipeline:myMIPS|regfile:Register_File|mux32x32to32:Mux1|mux32to1:mux0" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 499
+Warning (10739): Verilog HDL warning at mips.v(481): actual bit length 32 differs from formal bit length 1 File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 481
+Info (12128): Elaborating entity "WB_forward" for hierarchy "MIPSpipeline:myMIPS|WB_forward:WB_forward_block" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1237
+Info (12128): Elaborating entity "CompareAddress" for hierarchy "MIPSpipeline:myMIPS|WB_forward:WB_forward_block|CompareAddress:Compare1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1121
+Info (12128): Elaborating entity "mux2x32to32" for hierarchy "MIPSpipeline:myMIPS|WB_forward:WB_forward_block|mux2x32to32:muxReadData1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1127
+Info (12128): Elaborating entity "mux2_1" for hierarchy "MIPSpipeline:myMIPS|WB_forward:WB_forward_block|mux2x32to32:muxReadData1|mux2_1:mux0" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 716
+Info (12128): Elaborating entity "sign_extend" for hierarchy "MIPSpipeline:myMIPS|sign_extend:sign_extend1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1239
+Info (12128): Elaborating entity "zero_extend" for hierarchy "MIPSpipeline:myMIPS|zero_extend:zero_extend1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1241
+Info (12128): Elaborating entity "JRControl_Block" for hierarchy "MIPSpipeline:myMIPS|JRControl_Block:JRControl_Block1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1245
+Info (12128): Elaborating entity "Discard_Instr" for hierarchy "MIPSpipeline:myMIPS|Discard_Instr:Discard_Instr_Block" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1247
+Info (12128): Elaborating entity "flush_block" for hierarchy "MIPSpipeline:myMIPS|flush_block:flush_block1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1251
+Info (12128): Elaborating entity "ForwardingUnit" for hierarchy "MIPSpipeline:myMIPS|ForwardingUnit:Forwarding_Block" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1278
+Info (12128): Elaborating entity "mux3x32to32" for hierarchy "MIPSpipeline:myMIPS|mux3x32to32:mux3A" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1280
+Info (12128): Elaborating entity "ALUControl_Block" for hierarchy "MIPSpipeline:myMIPS|ALUControl_Block:ALUControl_Block1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1285
+Info (12128): Elaborating entity "alu" for hierarchy "MIPSpipeline:myMIPS|alu:alu_block" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1289
+Info (12128): Elaborating entity "alu1bit" for hierarchy "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu0" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 543
+Info (12128): Elaborating entity "addsub" for hierarchy "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu0|addsub:add1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 600
+Info (12128): Elaborating entity "mux21" for hierarchy "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu0|addsub:add1|mux21:mux1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 611
+Info (12128): Elaborating entity "adder" for hierarchy "MIPSpipeline:myMIPS|alu:alu_block|alu1bit:alu0|addsub:add1|adder:adder1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 613
+Info (12128): Elaborating entity "mux2x5to5" for hierarchy "MIPSpipeline:myMIPS|mux2x5to5:muxRegDst" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1292
+Info (12128): Elaborating entity "dataMem" for hierarchy "MIPSpipeline:myMIPS|dataMem:dataMem1" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1314
+Info (12128): Elaborating entity "StallControl" for hierarchy "MIPSpipeline:myMIPS|StallControl:StallControl_block" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1332
+Info (12128): Elaborating entity "shift_left_2" for hierarchy "MIPSpipeline:myMIPS|shift_left_2:shiftleft2_bne" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 1336
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 17
+    Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 51
+    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 52
+    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 55
+    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 57
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 11
+    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 12
+    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 12
+    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 13
+    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 14
+    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 15
+    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 16
+    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 18
+    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 19
+    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 20
+    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 21
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX0[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 24
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX1[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 25
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX2[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 26
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX3[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 27
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX4[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 28
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "HEX5[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 29
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 35
+    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
+    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
+    Warning (13410): Pin "VGA_B[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
+    Warning (13410): Pin "VGA_B[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 41
+    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 42
+    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 42
+    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 42
+    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 42
+    Warning (13410): Pin "VGA_HS" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 43
+    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
+    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
+    Warning (13410): Pin "VGA_R[2]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
+    Warning (13410): Pin "VGA_R[3]" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 44
+    Warning (13410): Pin "VGA_VS" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 45
+    Warning (13410): Pin "GSENSOR_CS_N" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 48
+    Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 50
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 17 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADC_CLK_10" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 6
+    Warning (15610): No output dependent on input pin "MAX10_CLK1_50" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 7
+    Warning (15610): No output dependent on input pin "MAX10_CLK2_50" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 8
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 32
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 38
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 49
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v Line: 49
+Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 97 output pins
+    Info (21060): Implemented 35 bidirectional pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 260 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Mon Jan 15 15:24:35 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:03
 
 

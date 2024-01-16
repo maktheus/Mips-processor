@@ -62,6 +62,7 @@ module mips(
 //  REG/WIRE declarations
 //=======================================================
 
+MIPSpipeline  myMIPS(MAX10_CLK1_50, reset);
 
 
 //=======================================================
@@ -111,14 +112,14 @@ buf #1000 buf0(instruction[0],temp[0]),
    buf31(instruction[31],temp[31]);
 
 always @(address)
-begin
- temp=instrmem[address/4];
-end
+   begin
+   temp=instrmem[address/4];
+   end
 
-initial
-begin
-$readmemb("instr.txt", instrmem);
-end
+   initial
+   begin
+   $readmemb("instr.txt", instrmem);
+   end
 
 endmodule
 
@@ -131,18 +132,18 @@ wire [31:0] instr;
 InstructionMem instructionmemory(instr, addr);
 
 initial
-begin
-$monitor("Mem Address=%h instruction=%b",addr,instr);
-addr=32'd0;
-#10000 addr=32'd4;
-#10000 addr=32'd8;
-#10000 addr=32'd12;
-#10000 addr=32'd16;
-#10000 addr=32'd20;
-#10000 addr=32'd24;
-#10000 addr=32'd28;
-#10000;
-$finish;
+   begin
+   $monitor("Mem Address=%h instruction=%b",addr,instr);
+   addr=32'd0;
+   #10000 addr=32'd4;
+   #10000 addr=32'd8;
+   #10000 addr=32'd12;
+   #10000 addr=32'd16;
+   #10000 addr=32'd20;
+   #10000 addr=32'd24;
+   #10000 addr=32'd28;
+   #10000;
+   $finish;
 end
 
 endmodule
@@ -1351,4 +1352,24 @@ mux2x32to32  muxJump( PC4bnej,PC4bne, PCj, JumpControl);
 assign PCjr = Bus_A_ALU;
 mux2x32to32  muxJR( PCin,PC4bnej, PCjr, EX_JRControl);
  
+endmodule
+
+module MIPSStimulus();
+
+parameter ClockDelay = 5000;
+
+reg clk,reset;
+
+
+MIPSpipeline  myMIPS(clk, reset);
+
+initial clk = 0;
+always #(ClockDelay/2) clk = ~clk;
+
+initial 
+begin
+   reset = 1;
+  #(ClockDelay/4);
+  reset = 0;
+end
 endmodule

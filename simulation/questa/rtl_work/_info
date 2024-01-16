@@ -1,0 +1,861 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/simulation/questa
+vAdd
+Z1 !s110 1705346704
+!i10b 1
+!s100 3?AB17ZMK:@AI3hd2kDXQ1
+Iblb_RI2dUI;Ilfa1i6_9z3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1705346584
+Z4 8C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v
+Z5 FC:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v
+L0 152
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1705346704.000000
+Z8 !s107 C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips|C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/mips.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips
+Z12 tCvgOpt 0
+n@add
+vadder
+R1
+!i10b 1
+!s100 ENXV2Y7DoDiMjVf=YKO:N1
+IB6?D?dZem30R0:R:>Xd0f0
+R2
+R0
+R3
+R4
+R5
+L0 617
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vadder1bit
+R1
+!i10b 1
+!s100 31:fWdHC@k`]edSV7S^Fb1
+I_M9bbBLiMZEB[GJ7G]Ia?2
+R2
+R0
+R3
+R4
+R5
+L0 194
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vaddsub
+R1
+!i10b 1
+!s100 7f2VKAK<mL@Hn2hoke?050
+Ike^ii2`l[[o5UeP2]L98g2
+R2
+R0
+R3
+R4
+R5
+L0 607
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+valu
+R1
+!i10b 1
+!s100 Fd9]6]PfYEIcB1F`LWQ^;3
+I393n_AF4MF:Lc:Z2[UTD71
+R2
+R0
+R3
+R4
+R5
+L0 535
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+valu1bit
+R1
+!i10b 1
+!s100 U>M3gEX>OjW7fd;6OMSIm3
+I3LmdUfLZmcCQVhUa1SblL2
+R2
+R0
+R3
+R4
+R5
+L0 596
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vALUControl_Block
+R1
+!i10b 1
+!s100 OkG6H6HS0A1;Kee5^@ooV1
+I7PkfZnznf?oU0TRXc`je=2
+R2
+R0
+R3
+R4
+R5
+L0 902
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@a@l@u@control_@block
+vandmore
+R1
+!i10b 1
+!s100 bQ3j;m7:kjP`D]85B[1Ck2
+IK`;]gQDmPocki@I2DA?ol3
+R2
+R0
+R3
+R4
+R5
+L0 380
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vCompareAddress
+R1
+!i10b 1
+!s100 SGeQdjPVZeK=`c@a;S]_I0
+IZk_O7S[X]_F9MA[^a?MGj3
+R2
+R0
+R3
+R4
+R5
+L0 1132
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@compare@address
+vControl
+R1
+!i10b 1
+!s100 >^UXoRaJoXYCJNWohRJ=k1
+IHJU0ObXIW7QmYbMYn[li_2
+R2
+R0
+R3
+R4
+R5
+L0 788
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@control
+vD_FF
+R1
+!i10b 1
+!s100 2Hb8J4JmI?:AKE?=DEMLF2
+I5anEXK;b<dlnD1bEBin0O0
+R2
+R0
+R3
+R4
+R5
+L0 275
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@d_@f@f
+vdataMem
+R1
+!i10b 1
+!s100 aXMY]B>3aM>hkh5H2WiC>0
+IE1]Vz[g:0Pk_lB;a6FEzb3
+R2
+R0
+R3
+R4
+R5
+L0 641
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+ndata@mem
+vdec5to32
+R1
+!i10b 1
+!s100 W2Zn^RjY9hJ3hP:FHOmn20
+I6ej[IhFXTYS40SAJ^^ALQ1
+R2
+R0
+R3
+R4
+R5
+L0 386
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vdecoder
+R1
+!i10b 1
+!s100 7f:EFU>g`a?;6Ic7:2l9B2
+IO7NC4B;bMCbJ0m:e4hLM:2
+R2
+R0
+R3
+R4
+R5
+L0 341
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vDiscard_Instr
+R1
+!i10b 1
+!s100 I6VZ^OAVY2NVjbSF?aBeh0
+IDRKJ4cCcJz>Sz1^cU=oAY3
+R2
+R0
+R3
+R4
+R5
+L0 1087
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@discard_@instr
+vflush_block
+R1
+!i10b 1
+!s100 MaMYmBaG::4j3oRMj3c]o0
+Ih;<jn`W=1;cbnfc]O[hz@1
+R2
+R0
+R3
+R4
+R5
+L0 1064
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vForwardingUnit
+R1
+!i10b 1
+!s100 LJU4?89fGMf<`ihUB[=bc2
+I]2@zOXEXOE:HUT@<4?`g42
+R2
+R0
+R3
+R4
+R5
+L0 938
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@forwarding@unit
+vinstrmemstimulous
+R1
+!i10b 1
+!s100 60Z95nTjMAXXVX=E0QCHT0
+IU;F1@`DgGCBXT7=>z`S5z3
+R2
+R0
+R3
+R4
+R5
+L0 127
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vInstructionMem
+R1
+!i10b 1
+!s100 ja0EEzFNgG5RzAZF1TLz_2
+IBQieVH8bSmg8I83>1aMX;0
+R2
+R0
+R3
+R4
+R5
+L0 74
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@instruction@mem
+vJRControl_Block
+R1
+!i10b 1
+!s100 mVz6PO@]n<S;VTm2g]Dej3
+IKHiOz3?F[Gla6lNhTZ6cP3
+R2
+R0
+R3
+R4
+R5
+L0 922
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@j@r@control_@block
+vmips
+R1
+!i10b 1
+!s100 Pk3jlHeCRU1CH_cae3>>z3
+IO;>RRMmB4?VY_hNFNnlWA0
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vMIPSpipeline
+R1
+!i10b 1
+!s100 jZ1nObWS[_SDIFAcA:XNB0
+Ie7;<a]WjNzPb4W@j6GJ_?3
+R2
+R0
+R3
+R4
+R5
+L0 1147
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@m@i@p@spipeline
+vMIPSStimulus
+R1
+!i10b 1
+!s100 gVQTLFVL3kiMSdU`Sa^b:1
+IYm7e:XEAD1jKE2bk;DlIf1
+R2
+R0
+w1705280640
+8C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/MIPSpipeline.v
+FC:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/MIPSpipeline.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/MIPSpipeline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips|C:/Users/makth/Downloads/DE10-Lite_v.2.1.0_SystemCD/Tools/SystemBuilder/CodeGenerated/DE10_LITE/mips/MIPSpipeline.v|
+!i113 1
+R10
+R11
+R12
+n@m@i@p@s@stimulus
+vmux21
+R1
+!i10b 1
+!s100 cTfAKilGzLB0T:>KeVCga2
+IAz:`mVmWNz=KSgC0?WF]L2
+R2
+R0
+R3
+R4
+R5
+L0 630
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux2_1
+R1
+!i10b 1
+!s100 J]D?j?f4kEkXbT8XOMnU`3
+InJ_kQKISEzcl7Mh5ilFkA2
+R2
+R0
+R3
+R4
+R5
+L0 776
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux2x32to32
+R1
+!i10b 1
+!s100 GX=YR]]]O]Y3>l[@ZICIC2
+ITXii7I]f68G2Zlo4f>ka23
+R2
+R0
+R3
+R4
+R5
+L0 709
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux2x5to5
+R1
+!i10b 1
+!s100 c5=f]Sm7@J7;c]3M8PWN33
+IaBT6I0?9dUjb;@JZ:VDZ]1
+R2
+R0
+R3
+R4
+R5
+L0 764
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux32to1
+R1
+!i10b 1
+!s100 `W<WX1Lib;T5iV:oKodF`3
+Im`9CaaVLm5ONGTAAaH_gB0
+R2
+R0
+R3
+R4
+R5
+L0 430
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux32x32to32
+R1
+!i10b 1
+!s100 CB?YXF]<l_Q]9OdCSn?212
+II3<1>]z554Cd[eA6X?U3L1
+R2
+R0
+R3
+R4
+R5
+L0 484
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux3x32to32
+R1
+!i10b 1
+!s100 ef:@^D?egBSY[k4Z@Mh5D1
+I47m8912?4_744i;1RTloH2
+R2
+R0
+R3
+R4
+R5
+L0 975
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vRegBit
+R1
+!i10b 1
+!s100 =h;e8JRCE=N;eDQZ^e?W=2
+I:XVIQ5mLUP_nQPb5`5o;z1
+R2
+R0
+R3
+R4
+R5
+L0 287
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@reg@bit
+vregfile
+R1
+!i10b 1
+!s100 ;5oOzk6HeP8VodBD1lnh[0
+IB70`[>@NUY5c[6ETVhJXb0
+R2
+R0
+R3
+R4
+R5
+L0 207
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vregister
+R1
+!i10b 1
+!s100 7nV:45U=VcA?^fbf^L`zF0
+IeaG05D;VZJAgCMFF;F>IT3
+R2
+R0
+R3
+R4
+R5
+L0 301
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vshift_left_2
+R1
+!i10b 1
+!s100 7`MQc6QE6]?g:zR^W>RJB2
+IMTmK1Aa?0IS;:1QKTKWGK2
+R2
+R0
+R3
+R4
+R5
+L0 757
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vsign_extend
+R1
+!i10b 1
+!s100 FjAEW_[V;g6gRGNWAEloH0
+I9Hil14j7hWaWPUNCYKOK]1
+R2
+R0
+R3
+R4
+R5
+L0 751
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vStallControl
+R1
+!i10b 1
+!s100 WT;TXMn23;I8^@lSRg7iS1
+IoTBK^TWc_OjkJfK>YHW^H0
+R2
+R0
+R3
+R4
+R5
+L0 991
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@stall@control
+vWB_forward
+R1
+!i10b 1
+!s100 mDMSeVl0B?3_Sf`T`z1J:3
+IozG>31Wzj6M8io<T]lkEg1
+R2
+R0
+R3
+R4
+R5
+L0 1096
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@w@b_forward
+vzero_extend
+R1
+!i10b 1
+!s100 ?lHCofHkE8QIDFO[`M6a[1
+IC]lDS^1@FHCEOY^hVVEO@0
+R2
+R0
+R3
+R4
+R5
+L0 703
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
